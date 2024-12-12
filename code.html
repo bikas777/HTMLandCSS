@@ -1,0 +1,165 @@
+!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="buddha.jpg" alt="image" />
+      </div>
+      <button class="menu-toggle">☰</button>
+      <ul class="menu">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="about_us.html">About us</a>
+        </li>
+        <li>
+          <a href="login.html">login</a>
+        </li>
+        <li>
+          <a href="#">Anything</a>
+        </li>
+        <li>
+          <input type="text" placeholder="Search" />
+        </li>
+      </ul>
+    </nav>
+    <div class="main">
+        <div class="mac">
+            <img src="mac.jpg" alt="">
+            <h1>Mac book</h1>
+            <p>Specially made for coder</p>
+            
+
+        </div>
+        <div class="mac">
+            <img src="phone.jpg" alt="">
+            <h1>Mac book</h1>
+            <p>Specially made for coder</p>
+        </div>
+
+    </div>
+
+    <footer>
+      <div class="footer_img">
+        <img src="mac.jpg" alt="image" />
+      </div>
+      <ul class="footer_ul">
+        <li>
+          <a href="" style="text-decoration: none;">Complain us</a>
+        </li>
+        <li>
+          <a href="">Admin@admin.com </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
+<style>
+  nav {
+    display: flex;
+    width: 100%;
+    height: max-content;
+    align-items: center;
+    top: 0;
+    background-color: aliceblue;
+    position: fixed;
+  }
+  .logo img {
+    width: 50px;
+    aspect-ratio: 4/3;
+  }
+  nav ul {
+    display: flex;
+    margin-left: auto;
+  }
+
+  ul li {
+    list-style: none;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  footer {
+    display: flex;
+    bottom: 0;
+    position: fixed;
+    height: max-content;
+    align-items: center;
+    background-color: rgb(115, 151, 183);
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .footer_img img {
+    width: 50px;
+    aspect-ratio: 4/3;
+  }
+  .footer_ul {
+    display: flex;
+  }
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .main{
+    display:flex;
+    width:100%;
+    margin-top: 40px;
+  }
+  .mac{
+    width: fit-content;
+    height: fit-content;
+    color: black;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+  .mac img{
+    width:100px;
+    aspect-ratio: 4/4;
+    margin-left: 20px;
+
+  }
+  .mac h1{
+    font-size: 20px;
+
+  }
+  @media only screen and (max-width: 600px) {
+    .menu {
+      display: none; 
+      flex-direction: column; 
+      background-color: #f9f9f9;
+      padding: 10px;
+      position: absolute;
+      top: 40px;
+      right: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu-toggle {
+      display: block; 
+      margin-left: auto;
+    }
+
+    .menu.show {
+      display: flex; 
+    }
+  }
+</style>
+<script>
+  document.querySelector(".menu-toggle").addEventListener("click", function () {
+    const menu = document.querySelector(".menu");
+    menu.classList.toggle("show");
+  });
+</script>

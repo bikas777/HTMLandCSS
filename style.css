@@ -1,0 +1,139 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and Header Styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin-bottom: 0.5rem;
+  }
+  
+  header nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  header nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Section */
+  main {
+    padding: 20px;
+  }
+  
+  /* Products Section */
+  #products {
+    margin-bottom: 2rem;
+  }
+  
+  #products h2 {
+    margin-bottom: 1rem;
+    color: #444;
+  }
+  
+  .product-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .product {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    width: calc(50% - 10px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .product h3 {
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .product p {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .product button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .product button:hover {
+    background: #218838;
+  }
+  
+  /* Shopping Cart Section */
+  #cart {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #cart h2 {
+    margin-bottom: 1rem;
+  }
+  
+  #cart-items {
+    list-style: none;
+    margin-bottom: 1rem;
+  }
+  
+  #cart-items li {
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem 0;
+  }
+  
+  #cart-total {
+    font-weight: bold;
+    color: #333;
+  }
+  .product img{
+height: 100px;
+width: 100;
+display:flex ;
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+    margin-top: 2rem;
+  }
+  .second-image{
+    display: flex;
+  }
+.slideshow-container img{
+height:700px;
+width: 100%;
+}

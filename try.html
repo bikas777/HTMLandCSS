@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">Band</a></li>
+            <li><a href="#">Tour</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="image_container">
+        <img class="mySlides" src="local1.jpg" alt="">
+        <img class="mySlides" src="local2.jpg" alt="">
+        <img class="mySlides" src="local3.jpg" alt="">
+    </div>
+
+    <div class="outline">
+
+        <div class="note">
+            <h1>The Local Band</h1>
+            <span>We love music</span>
+            <p>The Local Train is an Indian rock band formed in Chandigarh in 2008, and based in New Delhi since 2015.
+                The band's current lineup consists of lead guitarist - Paras Thakur, bassist - Ramit Mehra, and drummer
+                and percussionist.The Local Train released Khudi in 2017, a single from their second album. Its music
+                video starred Arjun Mathur, was directed by Vijesh Rajan and produced by Jungle Book Entertainment.[26]
+                It won Platinum Film of The Year at the 2017 India Film Project Awards.[27] The second album Vaaqif was
+                released in January 2018, with mixing and mastering done by Erich Talaba.[28] The band toured
+                extensively in 21 cities before the album launch. In 2018, they released Mizaaj's music video, their
+                first foray into animation that was conceptualized and animated by Ekabhuya Animation.[29] A cyber-punk
+                themed animated video for Gustaakh soon followed, produced by Plexus studios [30] and edited by Shreyas
+                Beltangdy. It was selected for the 18th Miami International Science Fiction Film Festival,[31] and
+                chosen as one of Rolling Stones 11 best Indian music videos for 2019.</p>
+        </div>
+    </div>
+    <div class="inline">
+    <div class="first_image">
+        <span>Raman</span>
+    <img src="raman.jpg" alt="does not exits">
+    <p>Raman Negi is the frontman, lyricist, and composer of 'The Local Train', which is a Hindi Rock Band from New Delhi that makes use of Hindi and Urdu lyrics delivering an amalgamation of ideas that they wish to express through their music.</p>
+    </div>
+
+    <div class="second_image">
+    <img src="paras.jpg" alt="does not exits">
+    <span>Paras</span>
+    <p>The Local Train is an Indian rock band formed in Chandigarh in 2008, and based in New Delhi since 2015. The band's current lineup consists of lead guitarist - Paras Thakur, bassist - Ramit Mehra, and drummer and percussionist </p>
+    </div>
+
+<div class="third_image">
+<img src="sahil.jpg" alt="does not exits">
+<span>sahil</span>
+<p>Sahil Sarin is a musician, drummer, educator, and member of critically acclaimed Hindi Rock band - The Local Train. He started playing drums at the age of 5.</p>
+</div>
+</div>
+
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        display: flex;
+        width: 100%;
+        height: max-content;
+        align-items: center;
+        top: 0;
+        background-color: black;
+        position: fixed;
+    }
+
+    ul {
+        display: flex;
+        margin-right: auto;
+    }
+
+    ul li {
+        list-style: none;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .image_container {
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+
+    .image_container img {
+        width: 100%;
+        height: 100%;
+    }
+    .outline {
+        justify-content: center;
+        display: flex; 
+        align-items: center;
+        text-align: center;
+
+    }   
+    .note{
+       width: 50%;
+   } 
+   .note p{
+    text-align: justify;
+   }
+   .first_image{
+    display: flex;
+    background: gray;
+    border: 1px;
+    box-shadow: 2px 2px 5px black;
+    margin:15px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+   }
+   .first_image p{
+    text-align: justify;
+   }
+   
+
+   .second_image{
+    display: flex;
+    background: gray;
+    border: 1px;
+    box-shadow: 2px 2px 5px black;
+    margin:15px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+   }
+   .second_image p{
+    text-align: justify;
+   }
+   
+
+   .third_image{
+    display: flex;
+    background: gray;
+    border: 1px;
+    box-shadow: 2px 2px 5px black;
+    margin:15px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+   }
+   .third_image p{
+    text-align: justify;
+   }
+
+   .inline{
+    justify-content: center;
+        display: flex; 
+        align-items: center;
+        text-align: center;
+    
+   }
+        
+</style>
+
+</html>
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 3000);
+    }
+</script>
